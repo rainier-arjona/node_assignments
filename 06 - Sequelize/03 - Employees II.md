@@ -4,7 +4,7 @@ Learn how to create and run migrations in Sequelize to manage database schema ch
 
 ---
 
-(wireframe)
+![ERD](./assets/management_erd.png)
 
 **Estimated Time to Completion:** 120 minutes
 
