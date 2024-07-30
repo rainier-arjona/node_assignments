@@ -2,7 +2,7 @@ Assignment: Reading Data from the Database
 # Learn how to read data from a Sequelize-managed database using various query techniques.
 
 
-![ERD](../assets/Student%20Info.png)
+![ERD](./assets/Student%20Info.png)
 
 **Estimated Time to Completion:** 90 minutes
 
