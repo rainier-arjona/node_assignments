@@ -3,7 +3,7 @@ Assignment: Updating Student Records
 
 In this assignment, you will enhance your existing web application by adding functionality to update student records. You will use Node.js, Express, and Sequelize to implement the update feature, allowing users to modify existing student records through a web interface. Instead of using PUT or PATCH, you will use POST with a custom action to handle updates.
 
-![ERD](../assets/Student%20Info%20III.png)
+![ERD](./assets/Student%20Info%20III.png)
 
 **Estimated Time to Completion:** 1-2 hours  
 **Level of Complexity:** Medium
