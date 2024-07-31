@@ -1,5 +1,5 @@
-Assignment: Reading Data from the Database
-# Learn how to read data from a Sequelize-managed database using various query techniques.
+#  Assignment: Student Info I
+Learn how to read data from a Sequelize-managed database using various query techniques.
 
 
 ![Wireframe](./assets/Student%20Info.png)
