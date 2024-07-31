@@ -1,7 +1,7 @@
 # Assignment: Sequelize Migrations and Model Updates
 Learn how to create and run migrations in Sequelize to manage database schema changes over time. Update existing models and handle schema modifications using migrations.
 
-![ERD](../assets/management_erd.png)
+![ERD](./assets/management_erd.png)
 
 **Estimated Time to Completion:** 120 minutes
 
