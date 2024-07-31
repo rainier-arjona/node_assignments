@@ -2,7 +2,7 @@
 
 Learn how to define multiple Sequelize models and synchronize them with a MySQL database to create corresponding tables.
 
-![MySQL Workbench](../assets/management_erd.png)
+![MySQL Workbench](./assets/management_erd.png)
 
 **Estimated Time to Completion:** 120 minutes
 
