@@ -32,7 +32,7 @@ You have previously created a database schema with three models: `Employee`, `Pr
     - Update the Remaining Model:
       - Update the remaining model to reflect changes required by the new schema (e.g., add new fields, remove existing fields, or modify data types).
 
-    ![Challenge I](../assets/management_II.png)
+    ![Challenge I](./assets/management_II.png)
 3. Generate Migrations:
     - Create a migration file to delete the two models from the database.
     - Create another migration file to apply changes to the remaining model based on the updated schema.
@@ -43,7 +43,7 @@ You have previously created a database schema with three models: `Employee`, `Pr
 5. Validate the Changes:
     - Use MySQL Workbench or a similar tool to verify that the database schema has been updated correctly. Ensure that the deleted tables are removed and the remaining table reflects the new schema.
 
-    ![Challenge I](../assets/updated.png)
+    ![Challenge I](./assets/updated.png)
 
 
 ## MVP Requirements:
