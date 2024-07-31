@@ -2,7 +2,7 @@
 
 In this assignment, you'll build upon the CRUD notes application from Part 1 by converting your routes to an API that responds with JSON data. You'll prefix your routes with `/api` and ensure that all responses are in JSON format. Your goal is to create a functional API to manage notes and verify it by testing the routes in the browser.
 
-![ERD](../assets/Note%20Taking%20App.png)
+![ERD](./assets/Note%20Taking%20App.png)
 
 **Estimated Time to Completion:** 90 mins
 
