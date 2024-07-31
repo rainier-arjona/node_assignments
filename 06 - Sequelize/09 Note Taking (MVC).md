@@ -2,7 +2,7 @@
 
 In this assignment, you will enhance the Note Taking App from Part 2 by restructuring your application into an MVC (Model-View-Controller) architecture. This will involve organizing your application code into distinct components to improve maintainability and scalability.
 
-![ERD](../assets/Note%20Taking%20App.png)
+![ERD](./assets/Note%20Taking%20App.png)
 
 ## Estimated Time to Completion
 90 mins
