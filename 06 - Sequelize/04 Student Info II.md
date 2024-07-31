@@ -3,7 +3,7 @@ Assignment: Creating and Deleting Student Records
 
 In this assignment, you will build a simple web application using Node.js, Express, and Sequelize to handle student records. The application will allow users to create new student records and delete existing ones via a web interface.
 
-![ERD](./assets/Student%20Info%20II.png)
+![Wireframe](../assets/Student%20Info%20II.png)
 
 **Estimated Time to Completion:** 2-3 hours
 
