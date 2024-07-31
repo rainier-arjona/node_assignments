@@ -2,7 +2,7 @@
 
 In this assignment, you will build a simple CRUD application using Express. The goal is to manage notes with basic CRUD operations while rendering the data through EJS templates. The notes will be temporarily stored in a server variable, and you will verify the application by testing the various routes.
 
-![Wireframe](../assets/Note%20Taking%20App.png)
+![Wireframe](./assets/Note%20Taking%20App.png)
 
 ## Estimated Time to Completion
 90 mins
