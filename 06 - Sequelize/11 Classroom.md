@@ -3,7 +3,7 @@
 ## Objective:
 In this assignment, you will work with Sequelize to implement and query a one-to-many relationship between two models: Classroom and Student. Your tasks will include creating, reading, and deleting records while managing these relationships effectively.
 
-![Wireframe](../assets/Classroom%20Management%20System.png)
+![Wireframe](./assets/Classroom%20Management%20System.png)
 
 **Estimated Time to Completion:** 90 mins  
 **Level of Complexity:** Medium
