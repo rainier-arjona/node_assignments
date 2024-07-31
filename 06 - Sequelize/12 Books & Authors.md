@@ -2,7 +2,7 @@
 In this assignment, you’ll build a basic application to manage many-to-many relationships between books and authors. 
 You'll need to implement features to create, read, and delete books and authors, as well as manage their associations.
 
-![ERD](../assets/Books%20&%20Authors.png)
+![ERD](./assets/Books%20&%20Authors.png)
 
 **Estimated Time to Completion:** 90 mins
 
@@ -13,7 +13,7 @@ You'll need to implement features to create, read, and delete books and authors,
 
 2. **Set Up Your Models:** Define the models for Book and Author and establish a many-to-many relationship between them. Use Sequelize to create and synchronize these models with your database.
 
-![ERD](../assets/Books%20&%20Authors%20ERD.png)
+![ERD](./assets/Books%20&%20Authors%20ERD.png)
 
 3. **Implement CRUD Operations:**
     - **Create New Records:** Implement routes to create new books and authors and assign them to each other.
