@@ -2,7 +2,7 @@
 
 In this assignment, you'll develop a web application that allows users to participate in a team-based trivia game. The application will include user authentication, team and room management, and a trivia quiz interface. You will also implement CRUD operations and RESTful APIs for managing game data.
 
-![Wireframe](../10%-%Assets/TriviaMeta.png)
+![Wireframe](./TriviaMeta.png)
 
 ## Estimated Time to Completion
 2-3 hours
