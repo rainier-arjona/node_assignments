@@ -54,7 +54,7 @@ function createUser(name, age, email) {
     return {
         name: name,
         age: age,
-        email: email || "Not provided"
+        email: email === undefined ? "Not provided" : email
     };
 }
 
