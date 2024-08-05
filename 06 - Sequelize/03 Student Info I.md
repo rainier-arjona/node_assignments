@@ -30,16 +30,18 @@ CREATE TABLE Students (
     first_name VARCHAR(100) NOT NULL,
     last_name VARCHAR(100) NOT NULL,
     email VARCHAR(255) UNIQUE NOT NULL,
-    age INT NOT NULL
+    age INT NOT NULL,
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
--- Insert Data
-INSERT INTO Students (first_name, last_name, email, age) VALUES
-('John', 'Doe', 'john.doe@example.com', 22),
-('Jane', 'Smith', 'jane.smith@example.com', 20),
-('Emily', 'Johnson', 'emily.johnson@example.com', 21),
-('Michael', 'Williams', 'michael.williams@example.com', 23),
-('Sarah', 'Brown', 'sarah.brown@example.com', 22);
+-- Insert Data with Dummy Timestamps
+INSERT INTO Students (first_name, last_name, email, age, createdAt, updatedAt) VALUES
+('John', 'Doe', 'john.doe@example.com', 22, '2023-01-01 10:00:00', '2023-01-01 10:00:00'),
+('Jane', 'Smith', 'jane.smith@example.com', 20, '2023-01-02 11:00:00', '2023-01-02 11:00:00'),
+('Emily', 'Johnson', 'emily.johnson@example.com', 21, '2023-01-03 12:00:00', '2023-01-03 12:00:00'),
+('Michael', 'Williams', 'michael.williams@example.com', 23, '2023-01-04 13:00:00', '2023-01-04 13:00:00'),
+('Sarah', 'Brown', 'sarah.brown@example.com', 22, '2023-01-05 14:00:00', '2023-01-05 14:00:00');
 ```
 
 ### Queries
