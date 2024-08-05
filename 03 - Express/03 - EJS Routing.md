@@ -22,7 +22,6 @@ Utilize EJS templating to dynamically render HTML content.
 
 **Evaluation Criteria & Learning Objectives:**
 
-- Set up an Express.js application
 - Configure basic routing
 - Serve static files
 - Utilize EJS templating
