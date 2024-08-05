@@ -49,7 +49,7 @@ For this assignment, you will create a web application to manage student records
 
 1. Create Forms:
     - Student Creation Form: Design a form to allow users to create a new student. The form should include fields for first_name, last_name, email, and age.
-    - Student Deletion Form: Design a form to delete an existing student. The form should include a field for entering the student ID to be deleted.
+    - Implement a button next to each student record in the table that allows users to delete the student. This button should submit a form to the /students/delete/:id endpoint.
 
 ### Validation and Testing
 
