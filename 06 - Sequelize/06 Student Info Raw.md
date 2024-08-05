@@ -1,5 +1,5 @@
 # Assignment: Filtering Student Records
-Enhance the existing student management application by implementing additional filtering functionality to retrieve and display students based on their age.
+Enhance the existing student management application by implementing additional filtering functionality to retrieve and display students based on their age using raw SQL queries.
 
 ![wireframe](./assets/Student%20Info%20raw.png)
 
@@ -30,7 +30,7 @@ Zip the updated project and submit it to [XXXXX] by the due date.
 Include a brief description of the changes made and how the filtering functionality works.
 
 ### Evaluation Criteria
-- Correct implementation of the filtering functionality.
+- Correct implementation of the filtering functionality using raw SQL queries.
 - Accurate display of student records based on the selected age criteria.
 - Proper update of the user interface to include new filtering options.
 - Overall code quality and adherence to best practices.
