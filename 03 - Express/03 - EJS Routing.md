@@ -42,7 +42,7 @@ Image assets here:
     - Configure essential middleware for using EJS and serving static files.
 2. **Implement GET Routes:**
     - Create the following routes:
-        - **GET /**: Serve a static HTML file named `index.html` located in a `public` folder.
+        - **GET /**: Serve the EJS template file named `index.ejs` located in the `views` folder, and serve static assets such as images from the `public` folder.
         - **GET /weather**: Render an EJS template named `weather.ejs`. Pass weather data to the template.
         - **GET /products**: Render an EJS template named `products.ejs`. Pass a list of products to the template.
 
