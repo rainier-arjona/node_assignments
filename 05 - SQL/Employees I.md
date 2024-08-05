@@ -2,8 +2,6 @@
 
 It's your turn to practice the various SELECT, INSERT, UPDATE, and DELETE queries.
 
-![Employees Dashboard wireframe](wireframe.png)
-
 **Estimated Time to Completion:** 60 mins
 
 **Level of Complexity:** Medium
