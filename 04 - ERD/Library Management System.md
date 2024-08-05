@@ -1,6 +1,5 @@
 ### Assignment: Library Management System
 
-In this assignment, we are going to add features to our previous activity which is the Library Management System, now it allows us
 The goal of this assignment is to design a database for a Library Management System. This system needs to store information about books, authors, and the relationships between them. We will achieve this by designing an Entity-Relationship Diagram (ERD), identifying primary keys, foreign keys, and detailing the relationships among the entities.
 
 ![Library Management System](/erd/Library%20Management%20System%20II.png)
