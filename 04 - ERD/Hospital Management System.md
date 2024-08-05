@@ -4,7 +4,7 @@ In this assignment, you will design an Entity-Relationship Diagram (ERD) for a H
 
 Use this wireframe as a reference to ensure that your ERD aligns with the user flows and functionalities depicted.
 
-![Hospital Management](/04%20-%20ERD/Hospital%20Management%20System.md)
+![Hospital Management](/04%20-%20ERD/HMS.png)
 
 
 **Estimated Time to Completion:** 120 mins
