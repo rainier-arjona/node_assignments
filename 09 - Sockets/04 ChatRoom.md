@@ -2,7 +2,7 @@
 
 In this assignment, you will create a real-time chatroom application using Socket.io. Users will be able to enter a chatroom, send and receive messages, and see a log of user activity (joining and leaving). Implement real-time updates and manage user connections with Socket.io.
 
-![wireframe](../../assets/ChatRoom.png)
+![wireframe](/10%20-%20Assets/ChatRoom.png)
 
 **Estimated Time to Completion:** 2 hours  
 **Level of Complexity:** Medium
