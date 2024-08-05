@@ -49,9 +49,9 @@ Image assets here:
 ### 3. Create EJS Templates
 
 1. **Main Page Template (`index.ejs`):**
-    - Create an EJS template to display the home page with links to the weather and products pages.
+    Create an EJS template to display a gallery of images on the home page, where the image URLs and titles are provided by the server.
 2. **Weather Page Template (`weather.ejs`):**
-    - Create an EJS template to display the weather data.
+    - Create an EJS template to display the weather data (static).
 3. **Products Page Template (`products.ejs`):**
     - Create an EJS template to display a list of products using an EJS loop.
 
