@@ -2,7 +2,7 @@
 
 The goal of this assignment is to design a comprehensive database for a Library Management System. This system needs to store information about books, authors, the relationships between them, and the borrowing of books by library members. We will achieve this by designing an Entity-Relationship Diagram (ERD), identifying primary keys, foreign keys, and detailing the relationships among the entities.
 
-![Library Management System](/04%20-%20ERD/Library%20Management%20System.png)
+![Library Management System](/04%20-%20ERD/Library%20Management%20System%20II.png)
 
 **Estimated Time to Completion:** 120 mins
 
