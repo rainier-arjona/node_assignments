@@ -6,7 +6,7 @@ Utilize EJS templating to dynamically render HTML content.
 
 ---
 
-![EJS Routing](/10%20-%20Assets/EJSRouting.png)
+![EJS Routing](/10%20-%20Assets/EJSTemplating.png)
 
 [**Image Assets**](https://drive.google.com/file/d/11CKo4D0aiGPdYYKCNWbxu2K6dRBcLqsH/view?usp=sharing)
 
