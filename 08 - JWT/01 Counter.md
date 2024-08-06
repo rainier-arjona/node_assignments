@@ -3,7 +3,7 @@
 ## Objective
 In this assignment, you will create a simple counter application using Express.js and JWT (JSON Web Tokens) to manage and persist the counter value. The application will have two buttons to increase or decrease the counter, with JWT used to handle state across requests.
 
-![wireframe](../../assets/Counter.png)
+![COUNTER](../10%20-%20Assets/Counter.png)
 
 **Estimated Time to Completion:** 90 minutes  
 **Level of Complexity:** Medium
