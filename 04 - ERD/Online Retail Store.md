@@ -9,13 +9,6 @@ This assignment is designed to develop your skills in database design by creatin
 
 **Level of Complexity:** Medium
 
-**Entities**
-1. Customer: *CustomerID, Name, Email, Phone, Address* 
-2. Products: *ProductID, Name, Description, Price, StockQuantity*
-2. Orders: *OrderID, CustomerID, OrderDate, TotalAmount*
-3. OrderDetails: *OrderDetailedID, OrderID, ProductID, Quantity, Price*
-
-
 **Learning Objectives**
 - Learn to design entities and attributes relevant to an online retail environment.
 - Understand the importance of relationships between customers, products, and orders.
