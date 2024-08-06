@@ -21,7 +21,7 @@ In this assignment, you will work with Sequelize to implement and query a one-to
 ### Set Up Relationships:
 - Establish a one-to-many relationship where a Classroom can have many Students, and each Student belongs to one Classroom.
 
-![ERD](../assets/students_erd.png)
+![ERD](./assets/students_erd.png)
 
 ### Implement Routes:
 
