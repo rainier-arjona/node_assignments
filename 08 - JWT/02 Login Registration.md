@@ -3,7 +3,7 @@
 ## Objective
 In this assignment, you will create a user authentication system using Express.js and JWT. The application will allow users to register, log in, and access a protected route (/welcome) only if they are authenticated. You will also implement JWT expiration and refresh tokens.
 
-![wireframe](../../assets/Login%20Registration.png)
+![wireframe](../10%20-%20Assets/Login%20Registration.png)
 
 **Estimated Time to Completion:** 2 hours  
 **Level of Complexity:** High
