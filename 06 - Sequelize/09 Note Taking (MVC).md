@@ -19,7 +19,6 @@ Medium
 ## Evaluation Criteria & Learning Objectives
 - Implement the MVC pattern to organize code effectively.
 - Refactor routes, controllers, and models to handle CRUD operations.
-- Maintain JSON responses as specified in Part 2.
 - Ensure application functionality is preserved after refactoring.
 
 ## Directions
@@ -51,11 +50,11 @@ Example methods in `noteController.ts` might include:
 Update your route definitions in a `noteRoutes.ts` file to use the methods defined in the controller.
 
 Example routes in `noteRoutes.ts` might include:
-- `router.get('/api/notes', noteController.getNotes)`
-- `router.get('/api/notes/:id', noteController.getNoteById)`
+- `router.get('/notes', noteController.getNotes)`
+- `router.get('/notes/:id', noteController.getNoteById)`
 
 #### Main Application
-In your main application file (e.g., `server.ts`), set up Express to use the routes defined in `noteRoutes.ts`. Ensure that the application correctly uses JSON responses and that all routes are properly wired up.
+In your main application file (e.g., `server.ts`), set up Express to use the routes defined in `noteRoutes.ts`.
 
 ```
 /src
@@ -69,12 +68,15 @@ In your main application file (e.g., `server.ts`), set up Express to use the rou
 ```
 
 ## Expected Outputs
-- `GET /api/notes`: JSON array of all notes.
-- `GET /api/notes/:id`: JSON object of a single note or a 404 error if not found.
-- `POST /api/notes`: JSON object of the newly created note or an error message.
-- `PATCH /api/notes/:id`: JSON object of the updated note or a 404 error if not found.
-- `PUT /api/notes/:id`: JSON object of the replaced note or a 404 error if not found.
-- `DELETE /api/notes/:id`: 204 status for successful deletion or a 404 error if not found.
+- `GET /notes:` Render a list of all notes as an HTML page.
+- `GET /notes/add:` Render a form to add a new note as an HTML page.
+- `POST /notes:` Handle form submission to create a new note and redirect to the notes list.
+- `GET /notes/`
+    /edit: Render a form to edit an existing note as an HTML page.
+- `PUT /notes/`
+    : Handle form submission to update a note and redirect to the updated note view.
+- `DELETE /notes/`
+    : Handle note deletion and redirect to the notes list.
 
 ## Stretch Requirements
 - Implement validation and error handling in the model and controller layers.

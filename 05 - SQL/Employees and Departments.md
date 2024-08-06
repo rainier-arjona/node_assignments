@@ -1,4 +1,4 @@
-### Assignment: Employees Queries II
+### Assignment: Employees and Department
 
 Let's focused on performing JOIN operations between two tables, along with UPDATE and DELETE operations.
 
