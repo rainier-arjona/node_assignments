@@ -11,13 +11,6 @@ Use this wireframe as a reference to ensure that your ERD aligns with the user f
 
 **Level of Complexity:** Medium
 
-**Entities**
-1. Users: *UserID, Username, Email, Password, DateJoined*
-2. Posts: *PostID, UserID, Content, PostDate*
-3. Comments: *CommentID, PostID, UserID, CommentText, CommentDate*
-4. Likes: *LikeID, PostID, UserID, LikeDate*
-
-
 **Learning Objectives**
 - Understand how to identify and define entities and their attributes in a social media context.
 - Learn to establish relationships between users, posts, comments, and likes.
