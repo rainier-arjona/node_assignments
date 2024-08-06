@@ -2,7 +2,7 @@
 Learn how to read data from a Sequelize-managed database using various query techniques.
 
 
-![Wireframe](./assets/Student%20Info.png)
+![Wireframe](./assets/StudentInfo.png)
 
 **Estimated Time to Completion:** 90 minutes
 
