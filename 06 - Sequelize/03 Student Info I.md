@@ -51,7 +51,7 @@ Using Sequelize, complete the following queries to retrieve data from the `Stude
    - Fetch all students from the `Students` table.
 
 2. Find Student by ID:
-   - Fetch a student by with ID #3.
+   - Fetch a student by ID when the ID link is clicked.
 
 3. Find Students by Age:
    - Fetch all students who are 22 years old.
