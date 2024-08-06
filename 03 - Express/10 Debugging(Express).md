@@ -3,7 +3,7 @@ Assignment: Debugging Express Application
 
 In this assignment, you'll improve your debugging skills by identifying and fixing issues in a provided Express application. Your goal is to make sure the application functions correctly and meets the specified requirements.
 
-![ERD](./assets/debugging(express).png)
+![ERD](../10%20-%20Assets/Debugging(express).png)
 
 **Estimated Time to Completion:** 60 minutes
 
