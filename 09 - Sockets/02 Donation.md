@@ -4,7 +4,7 @@ In this assignment, you’ll create a real-time donation tracker application usi
 
 ---
 
-![Wireframe](https://prod-files-secure.s3.us-west-2.amazonaws.com/19ad07a1-ef67-4a69-a521-ac6460e9edce/c5d223aa-7d83-4af4-a359-4823d4745805/Untitled.png)
+![wireframe](../10%20-%20Assets/OnlineDonation.png)
 
 **Estimated Time to Completion:** 150 minutes
 
