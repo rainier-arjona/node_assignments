@@ -4,7 +4,7 @@ Assignment: Query One-to-Many Relationships with ORM
 
 In this assignment, you will work with Sequelize to implement and query a one-to-many relationship between two models: Classroom and Student. Your tasks will include creating, reading, and deleting records while managing these relationships effectively.
 
-![Wireframe](./assets/ClassroomManagementSystem.png)
+![Wireframe](../10%20-%20Assets/ClassroomManagementSystem.png)
 
 **Estimated Time to Completion:** 90 mins  
 **Level of Complexity:** Medium
