@@ -2,7 +2,7 @@
 In this assignment, you’ll build a basic application to manage many-to-many relationships between books and authors. 
 You'll need to implement features to create, read, and delete books and authors, as well as manage their associations.
 
-![ERD](./assets/Books%20&%20Authors.png)
+![WIREFRAME](../10%20-%20Assets/Books&Authors.png)
 
 **Estimated Time to Completion:** 90 mins
 
