@@ -17,13 +17,6 @@ This assignment is designed to develop your skills in database design by creatin
 - Develop skills in identifying and applying constraints to maintain data consistency.
 - Practice constructing comprehensive ERDs that model business processes and workflows.
 
----
-
-**Relationships**
-- A customer can place multiple orders.
-- An order can include multiple products.
-- A product can appear in multiple orders. 
-
 **Tasks**
 1. Design the ERD for the Library Management System.
 2. Identify primary keys, foreign keys, and relationships between the entities.
