@@ -32,7 +32,8 @@ In this assignment, you'll be provided with a simple Express and TypeScript appl
 
 ## Directions
 
-1. **Download the Provided Code:** You will be given a zip file containing a simple Express and TypeScript application with intentional issues related to movies and reviews.
+1. **Download the Provided Code:** You will be given a zip file containing a simple Express and TypeScript application with intentional issues related to movies and reviews. <br>
+**Download here:** [Movies & Reviews](https://drive.google.com/file/d/1R5eiX6arWu0peoH63JEVRO6Cr9YeclBN/view?usp=sharing)
 
 2. **Debug the Application:**
 
