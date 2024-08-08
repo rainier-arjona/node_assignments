@@ -4,7 +4,7 @@ The goal of this assignment is to design a comprehensive Entity-Relationship Dia
 
 Use this wireframe as a reference to ensure that your ERD aligns with the user flows and functionalities depicted.
 
-![Social Media Platform](/04%20-%20ERD/SocialNetworking.png)
+![Social Media Platform](/04%20-%20ERD/Assignments/Social%20Media%20Platform/SocialNetworking.png)
 
 
 **Estimated Time to Completion:** 120 mins
