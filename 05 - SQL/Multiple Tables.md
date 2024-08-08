@@ -40,6 +40,7 @@ Use the updated management_db file from the previous exercise.
     ```
 **MVP Requirements: Basic Queries**
 Create a new SQL file and perform the following challenges:
+
 1. Perform an INNER JOIN across three tables:
     - Write a query to retrieve all employees along with their department names and project names.
 2. Perform an INNER JOIN with a WHERE clause:
@@ -54,4 +55,3 @@ Create a new SQL file and perform the following challenges:
     - Write a query to delete all employees who are working on 'Project B'.
 7. Complex Update with INNER JOIN:
     - Write a query to update the email addresses of all employees in the 'Human Resources' department to follow the format 'firstname.lastname@hr.com'.
-
