@@ -2,8 +2,11 @@
 
 This assignment is designed to develop your skills in database design by creating an Entity-Relationship Diagram (ERD) for an online retail store. The purpose of this assignment is to model the key entities involved in the store's operations, such as Customers, Products, Orders, and OrderDetails, and to define the relationships between these entities.
 
-![Online Retail Store](/04%20-%20ERD/Assignments/Online%20Retail%20Store/ORS1.png)
-![Online Retail Store](/04%20-%20ERD/Assignments/Online%20Retail%20Store/ORS2.png)
+![Online Retail Store](/04%20-%20ERD/Assignments/Online%20Retail%20Store/01.png)
+![Online Retail Store](/04%20-%20ERD/Assignments/Online%20Retail%20Store/02.png)
+![Online Retail Store](/04%20-%20ERD/Assignments/Online%20Retail%20Store/03.png)
+![Online Retail Store](/04%20-%20ERD/Assignments/Online%20Retail%20Store/04.png)
+![Online Retail Store](/04%20-%20ERD/Assignments/Online%20Retail%20Store/05.png)
 
 
 
