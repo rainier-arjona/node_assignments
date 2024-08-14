@@ -4,7 +4,7 @@ In this assignment, you'll build a basic Node.js web server to simulate a CCTV s
 
 ---
 
-![../10%20-%20Assets/CCTV.png](../10%20-%20Assets/CCTV.png)
+![../10%20-%20Assets/CCTV.png](../10%20-%20Assets/cctv.png)
 
 **Estimated Time to Completion:** 60 mins
 
