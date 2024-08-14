@@ -2,6 +2,8 @@
 
 In this assignment, you'll build a group chat application using Express.js with TypeScript, Sequelize for database management, JWT for authentication, and Socket.io for real-time communication. The application will allow users to log in, create and manage chat rooms, and communicate in real-time.
 
+![Wireframe](../10%20-%20Assets/ChatRoomwithbe.png)
+
 **Estimated Time to Completion:** 3-4 hours
 
 **Level of Complexity:** High
