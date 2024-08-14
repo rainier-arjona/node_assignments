@@ -80,7 +80,9 @@ let result2 = multiply(2, 3, 4);
 
 ```typescript
 function fetchData(url, callback, method) {
-    method = method === undefined ? "GET": method;
+     if (method === undefined) {
+        method = "GET";
+    }
     // Simulating an API call
     setTimeout(() => {
         callback("Data from " + url + " with method " + method);
