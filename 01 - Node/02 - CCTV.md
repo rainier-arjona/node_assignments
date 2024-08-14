@@ -1,4 +1,4 @@
-### CCTV
+### Assignment: CCTV
 
 In this assignment, you'll build a basic Node.js web server to simulate a CCTV system with multiple camera feeds. You will implement basic routing to serve different HTML pages for each camera feed and serve static files to enhance the user interface.
 
