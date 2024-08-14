@@ -3,6 +3,8 @@
 ## Objective:
 In this milestone assignment, you will enhance the Classroom and Student application by incorporating validation into your Sequelize models and routes. You will implement and manage a one-to-many relationship between Classrooms and Students, ensuring data integrity through validations.
 
+![Wireframe](../10%20-%20Assets/ClassroomManagementSystem.png)
+
 **Estimated Time to Completion:** 90 mins  
 **Level of Complexity:** Medium
 
