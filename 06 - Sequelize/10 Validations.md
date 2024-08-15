@@ -1,7 +1,8 @@
 # Assignment: User Model with Validations
 
-**Objective:**
 In this assignment, you will create a User model with validations to ensure data integrity using Sequelize. You will then validate the table schema using MySQL Workbench.
+
+![../10%20-%20Assets/CCTV.png](../10%20-%20Assets/UserModelValidation.png)
 
 **Estimated Time to Completion:** 60 mins
 
