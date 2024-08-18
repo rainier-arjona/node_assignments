@@ -10,7 +10,7 @@ In this debugging assignment, you will identify and fix issues related to Socket
 
 Below is the provided code with intentional errors. Debug and correct the issues as described.
 
-[Download here.]([https://drive.google.com/file/d/1WAMy0bWNr8u7h9kD1HrOZ1MjMmldvPtz/view?usp=sharing](https://drive.google.com/file/d/1-Cy0nJocM4pnGxoqnMbNQjxXBYYanKk7/view?usp=sharing))
+[Download here.](https://drive.google.com/file/d/1-Cy0nJocM4pnGxoqnMbNQjxXBYYanKk7/view?usp=sharing)
 
 1. **Setup**: Download the code snippets from the provided links. Install the necessary dependencies using `npm install`.
 2. **Application Overview**:
