@@ -8,6 +8,9 @@ In this debugging assignment, you will identify and fix issues related to JWT im
 ## Instructions
 
 ### 1. Review the Application Code
+Below is the provided code with intentional errors. Debug and correct the issues as described.
+
+[Download here.](https://drive.google.com/file/d/1eNUFD2aC_IDJ849uuTbFljNBsmjyiZc0/view?usp=sharing)
 
 #### Application Overview
 You have been provided with a sample Express.js application that uses JWT for authentication. The application includes endpoints for registration, login, protected routes, and token refresh.
