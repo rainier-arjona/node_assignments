@@ -1,9 +1,6 @@
-Assignment: Debugging Express Application
-## Assignment: Debugging (Express)
+### Assignment: Debugging Express Application (Student Enrollment)
 
-In this assignment, you'll improve your debugging skills by identifying and fixing issues in a provided Express application. Your goal is to make sure the application functions correctly and meets the specified requirements.
-
-![ERD](../10%20-%20Assets/Debugging(express).png)
+In this assignment, you'll practice debugging by identifying and fixing issues in a provided Express application. The application handles student enrollment data and displays it on a webpage. Your goal is to ensure that the application functions correctly according to the requirements.
 
 **Estimated Time to Completion:** 60 minutes
 
@@ -11,175 +8,43 @@ In this assignment, you'll improve your debugging skills by identifying and fixi
 
 ### Instructions
 
-1. Read through the provided code and instructions. You will be given files to work with.
-2. Identify and fix issues in the provided Express application code.
-3. Test the application to ensure it functions as expected.
-4. Submit your GitHub URL by the due date.
+Below is the provided code with intentional errors. Debug and correct the issues as described.
+
+[Download here.](https://drive.google.com/file/d/1WAMy0bWNr8u7h9kD1HrOZ1MjMmldvPtz/view?usp=sharing)
+
+1. **Review the Provided Code:**
+    - The code files you will be working with include `index.ejs`, `edit.ejs`, `server.ts`, and `model/enrollment.ts`.
+    - Carefully read through the code to understand its functionality and identify any potential issues.
+2. **Identify and Fix Issues:**
+    - **In `index.ejs`:**
+        - Check the placeholders and syntax for displaying student data within the table. Ensure correct EJS syntax is used for dynamic data rendering.
+        - Verify that the form action method and input names match the server-side logic.
+    - **In `server.ts`:**
+        - Inspect the route handlers for managing enrollment data. Ensure data retrieval and saving to the database are functioning correctly.
+        - Validate the session and database configuration to avoid errors when retrieving student information.
+        - Check for potential issues in Sequelize model usage, particularly in the `update` and `delete` routes.
+    - **In `model/enrollment.ts`:**
+        - Review the Sequelize model definition for the `Enrollment` table. Ensure that the model attributes and associations are correctly defined.
+        - Check for any syntax errors or misconfigurations in the model that could affect CRUD operations.
+3. **Test the Application:**
+    - Run the server and test the application by adding, editing, and deleting student records.
+    - Ensure data is correctly displayed on the homepage (`/`) and that form submissions work as expected.
+4. **Submit Your Work:**
+    - Submit your updated code to your GitHub repository.
+    - Include a brief description of the issues you identified and the fixes you implemented.
 
 ### Evaluation Criteria & Learning Objectives
 
-- Correctly identify and resolve issues in Express route handlers and middleware.
-- Ensure proper session handling and data retrieval.
-- Validate EJS templates to ensure dynamic data is rendered correctly.
-
-### Provided Code
-
-**server.ts**
-```ts
-import express, { Request, Response } from 'express';
-import path from 'path';
-import bodyParser from 'body-parser';
-import session from 'express-session';
-
-const app = express();
-const port = 3000;
-
-// body parser
-app.use(bodyParser.urlencoded({ extended: true }));
-
-// Set EJS as the view engine
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, '..', 'src', 'views'));
-
-// Configure session middleware
-app.use(session({
-    secret: 'secretPolice', // Replace with your own secret key
-    resave: false,
-    saveUninitialized: true,
-    cookie: { secure: false } // Set to true if using HTTPS
-}));
-
-// Extend session type
-declare module 'express-session' {
-    interface SessionData {
-        enrollment_data: {
-            name: number;
-            email: boolean;
-            number: number;
-            course: boolean;
-            start_date: date;
-        };
-    }
-}
-
-// Define a route to render an EJS template
-app.get('/', (req: Request, res: Response) => {
-    res.render("index");
-});
-
-app.post("/submit", (req: Request, res: Response) => {
-    req.session.enrollment_data = {
-        name: req.body.name,
-        email: req.body.email,
-        number: req.body.number,
-        course: req.body.course,
-        start_date: req.body.start_date
-    };
-    res.redirect("/resume");
-});
-
-app.get("/resume", (req: Request, res: Response) => {
-    // Retrieve data from session
-    const enrollment_data = req.session.enrollment_data;
-
-    // Render the resume view with the data
-    res.render("resume", enrollment_data);
-});
-
-app.listen(port, () => {
-    console.log(`Server is running at http://localhost:${port}`);
-});
-```
-
-**views/index.ejs**
-```html
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Enrollment Form</title>
-</head>
-
-<body>
-    <div class="border">
-        <h1>Course Enrollment Form</h1>
-        <form action="/submit" method="POST">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-
-            <label for="number">Phone Number:</label>
-            <input type="tel" id="number" name="number" required><br><br>
-
-            <label for="course">Course:</label>
-            <input type="text" id="course" name="course" required><br><br>
-
-            <label for="start_date">Start Date:</label>
-            <input type="date" id="start_date" name="start_date" required><br><br>
-
-            <input type="submit" value="Submit">
-        </form>
-    </div>
-</body>
-
-</html>
-```
-
-**views/resume.ejs**
-```html
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Enrollment Details</title>
-    </head>
-    <body>
-        <div class="border">
-            <h1>Enrollment Details</h1>
-            <p>Full Name: <%= names %></p>
-            <p>Email: <%= email %></p>
-            <p>Phone Number: <% number %></p>
-            <p>Course: <%= courses %></p>
-            <p>Start Date: <% start_date %></p>
-            <a href="/">Return</a>
-        </div>
-    </body>
-</html>
-```
-
-### Assignment Tasks
-
-1. **Review the Code:**
-   - Examine the `server.ts` file and the EJS templates (`index.ejs` and `resume.ejs`) to understand their functionality.
-2. **Identify and Fix Issues:**
-   - In `server.ts`:
-     - Check Route Handlers: Ensure the `/submit` route correctly stores session data. Verify that the `/resume` route correctly retrieves and displays session data.
-     - Fix Type Definitions: Make sure the session data type definitions are accurate.
-     - Correct Import Errors: Address any issues with importing and using modules.
-   - In `index.ejs` and `resume.ejs`:
-     - Check Placeholders: Ensure that the EJS templates use correct syntax for placeholders and variables.
-     - Verify Form Handling: Confirm that form data is properly captured and submitted.
-3. **Test the Application:**
-   - Run the server and test the form submission and data display functionality.
-   - Ensure that data is correctly stored in the session and rendered on the `/resume` page.
-4. **Submit Your Work:**
-   - Zip your updated project and submit it by the due date.
-   - Include a brief description of the issues you identified and how you resolved them.
-
-### Expected Outcomes
-
-- The application should correctly render the form on the `/` route.
-- Data submitted via the form should be displayed correctly on the `/resume` route.
+- Correctly identify and fix issues related to EJS rendering and form handling.
+- Ensure proper CRUD operations using Sequelize models.
+- Verify session handling and data retrieval within Express routes.
+- Correctly define and configure Sequelize models for database interactions.
 
 ### Hints for Debugging
 
-- Verify that the session data is correctly assigned and retrieved using `req.session`.
-- Ensure that EJS placeholders in `resume.ejs` match the data keys.
-- Look out for any error messages or issues in the console and address them.
+- **EJS Placeholders:** Verify that placeholders use the correct `<%= %>` syntax for outputting values and check that the correct property names are being referenced.
+- **Form Handling:** Ensure that form methods (`GET`, `POST`) match the server routes and that the input fields are correctly named.
+- **Sequelize Issues:** Look for potential errors in model handling, such as incorrect attribute names or missing model methods (e.g., `save`, `destroy`).
+- **Model Definition:** Ensure that Sequelize model attributes and data types are correctly defined, and check for any missing associations or validation rules.
+
+**Good luck, and happy debugging!**
