@@ -1,6 +1,5 @@
 # Debugging Assignment: JWT Authentication Issues
 
-## Objective
 In this debugging assignment, you will identify and fix issues related to JWT implementation in an Express.js application. This assignment will focus on debugging problems with token creation, expiration, and route protection.
 
 **Estimated Time to Completion:** 1.5 hours  
