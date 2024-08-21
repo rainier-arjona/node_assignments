@@ -21,7 +21,7 @@ Medium
 
 - Implement CRUD operations with Express and EJS
 - Handle various HTTP methods (GET, POST, PATCH, PUT, DELETE)
-- Use server-side storage to manage data temporarily
+- Use sequelize storage to manage data
 - Render data using EJS templates
 
 ## Directions
