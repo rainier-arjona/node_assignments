@@ -19,7 +19,7 @@ In this assignment, you'll build upon the CRUD notes application from Part 1 by 
 
 - Implement API routes with Express to handle CRUD operations.
 - Respond with JSON data for each route.
-- Use server-side storage to manage data temporarily.
+- Use sequelize storage to manage data.
 - Test API endpoints using Postman.
 
 ## Directions
