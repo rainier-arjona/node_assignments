@@ -39,11 +39,11 @@ Learn how to read data from a Sequelize-managed database using various query tec
     
     -- Insert Data with Dummy Timestamps
     INSERT INTO Students (first_name, last_name, email, age, createdAt, updatedAt) VALUES
-    ('John', 'Doe', 'john.doe@gmail.com', 22, '2023-01-01 10:00:00', '2023-01-01 10:00:00'),
-    ('Jane', 'Smith', 'jane.smith@gmail.com', 20, '2023-01-02 11:00:00', '2023-01-02 11:00:00'),
-    ('Emily', 'Johnson', 'emily.johnson@gmail.com', 21, '2023-01-03 12:00:00', '2023-01-03 12:00:00'),
-    ('Michael', 'Williams', 'michael.williams@gmail.com', 23, '2023-01-04 13:00:00', '2023-01-04 13:00:00'),
-    ('Sarah', 'Brown', 'sarah.brown@gmail.com', 22, '2023-01-05 14:00:00', '2023-01-05 14:00:00');
+    ('Alvin', 'Cruz', 'john.doe@gmail.com', 22, '2023-01-01 10:00:00', '2023-01-01 10:00:00'),
+    ('Jonathan', 'Aguirre', 'jane.smith@gmail.com', 20, '2023-01-02 11:00:00', '2023-01-02 11:00:00'),
+    ('Arjon', 'Gellido', 'emily.johnson@gmail.com', 21, '2023-01-03 12:00:00', '2023-01-03 12:00:00'),
+    ('Michael', 'Calisto', 'michael.williams@gmail.com', 23, '2023-01-04 13:00:00', '2023-01-04 13:00:00'),
+    ('Sarah', 'Ramirez', 'sarah.brown@gmail.com', 22, '2023-01-05 14:00:00', '2023-01-05 14:00:00');
     
     ```
     
