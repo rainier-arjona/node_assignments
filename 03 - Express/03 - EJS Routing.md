@@ -1,15 +1,10 @@
-# EJS Routing
+### Assignment: EJS Routing
 
-Create a basic web application using Express.js and EJS to replicate the provided wireframe layout.
-Implement GET routes to serve different pages and content.
-Utilize EJS templating to dynamically render HTML content.
+Create a basic web application using Express.js and EJS to replicate the provided wireframe layout. Implement GET routes to serve different pages and content. Utilize EJS templating to dynamically render HTML content.
 
----
+![/10%20-%20Assets/EJSTemplating.png](/10%20-%20Assets/EJSTemplating.png)
 
-![EJS Routing](/10%20-%20Assets/EJSTemplating.png)
-
-Image assets here:
-[**Image Assets**](https://drive.google.com/file/d/11CKo4D0aiGPdYYKCNWbxu2K6dRBcLqsH/view?usp=sharing)
+Image assets here: [**Image Assets**](https://drive.google.com/file/d/11CKo4D0aiGPdYYKCNWbxu2K6dRBcLqsH/view?usp=sharing)
 
 **Estimated Time to Completion:** 90 minutes
 
@@ -19,43 +14,36 @@ Image assets here:
 
 1. Read through the directions below.
 2. Complete the necessary elements as outlined.
-3. Submit your code for evaluation.
+3. Submit your GitHub URL with the completed code by the due date.
 
 **Evaluation Criteria & Learning Objectives:**
 
-- Configure basic routing
-- Serve static files
-- Utilize EJS templating
-- Render dynamic content based on provided data
-
----
+- **Configure basic routing:** Set up Express routes to handle different URLs.
+- **Serve static files:** Serve images and other static assets using Express.
+- **Utilize EJS templating:** Use EJS to render dynamic HTML content.
+- **Render dynamic content based on provided data:** Pass data to EJS templates to display dynamic content.
 
 **Directions:**
 
-### 1. Set Up the Project
+**1. Set Up the Project**
 
-**Note:** You have already learned how to set up an Express.js project with TypeScript, so the basic setup steps are omitted.
+- Set up your Express.js project.
 
-### 2. Create the Express Application
+**2. Create the Express Application**
 
-1. **Configure Middleware:**
+- **Configure Middleware:**
     - Configure essential middleware for using EJS and serving static files.
-2. **Implement GET Routes:**
+- **Implement GET Routes:**
     - Create the following routes:
         - **GET /**: Serve the EJS template file named `index.ejs` located in the `views` folder, and serve static assets such as images from the `public` folder.
         - **GET /weather**: Render an EJS template named `weather.ejs`. Pass weather data to the template.
         - **GET /products**: Render an EJS template named `products.ejs`. Pass a list of products to the template.
 
-### 3. Create EJS Templates
+**3. Create EJS Templates**
 
-1. **Main Page Template (`index.ejs`):**
-    Create an EJS template to display a gallery of images on the home page, where the image URLs and titles are provided by the server.
-2. **Weather Page Template (`weather.ejs`):**
-    - Create an EJS template to display the weather data (static).
-3. **Products Page Template (`products.ejs`):**
-    - Create an EJS template to display a list of products using an EJS loop.
-
----
+- **Main Page Template (`index.ejs`):** Create an EJS template to display a gallery of images on the home page, where the image URLs and titles are provided by the server.
+- **Weather Page Template (`weather.ejs`):** Create an EJS template to display the weather data (static).
+- **Products Page Template (`products.ejs`):** Create an EJS template to display a list of products using an EJS loop.
 
 **Expected Output:**
 

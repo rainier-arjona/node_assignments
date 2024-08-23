@@ -1,8 +1,6 @@
-# Assignment: Defining Optional Properties within Interfaces
+### Assignment: Defining Optional Properties within Interfaces
 
 In this assignment, you'll practice creating TypeScript interfaces to describe the shape of complex objects. You'll define optional properties within these interfaces and verify your work by running the code and logging the objects to the console.
-
----
 
 **Estimated Time to Completion:** 60 mins
 
@@ -16,30 +14,32 @@ In this assignment, you'll practice creating TypeScript interfaces to describe t
 
 **Evaluation Criteria & Learning Objectives**
 
-- Create TypeScript interfaces to describe the shape of objects
-- Define optional properties within interfaces
-- Ensure the objects conform to the interfaces
-- Verify functionality by logging objects to the console
-
----
+- **Create TypeScript interfaces to describe the shape of objects:** Develop accurate interfaces to model complex data structures.
+- **Define optional properties within interfaces:** Use TypeScript's optional property syntax to handle properties that may or may not be present.
+- **Ensure the objects conform to the interfaces:** Verify that objects adhere to the defined interfaces.
+- **Verify functionality by logging objects to the console:** Ensure that your implementation is correct by logging the objects and checking their structure.
 
 **Directions**
+
 Create TypeScript interfaces for the following JavaScript objects. Ensure that you define optional properties where applicable. Verify your work by logging the objects to the console.
 
-### Object 1
+*Object 1*
 
 ```tsx
+tsxCopy code
 const product = {
     id: 1,
     name: "Laptop",
     price: 999.99,
     description: "A high-end gaming laptop"
 };
+
 ```
 
-### Object 2
+*Object 2*
 
 ```tsx
+tsxCopy code
 const user = {
     id: 123,
     username: "techguru",
@@ -52,11 +52,13 @@ const user = {
         postalCode: "75001"
     }
 };
+
 ```
 
-### Object 3
+*Object 3*
 
 ```tsx
+tsxCopy code
 const order = {
     orderId: 456,
     userId: 123,
@@ -80,65 +82,63 @@ const order = {
     status: "Shipped",
     trackingNumber: "TRACK12345"
 };
-```
 
----
+```
 
 **Expected Output**
 
 - Create interfaces for each object with appropriate type annotations.
 - Define optional properties using the `?` syntax.
-- Log the objects to the console to verify functionality.
+- Log each object to the console to verify functionality.
 
 **Hints**
 
 - Use `?` to define optional properties in your interfaces.
 - Ensure all nested objects are also strongly typed with their own interfaces.
-- Log each object to the console to verify the implementation.
+- Review the provided object structures to guide your interface definitions.
 
 ---
 
-# Solutions:
+**Solutions**
 
-### 1
+*Solution for Object 1*
 
 ```tsx
+tsxCopy code
 /**
  * Interface representing a product.
  * Optional properties are marked with `?`.
  */
 interface Product {
-    id: number;             // Required property: id of the product
-    name: string;           // Required property: name of the product
-    price: number;          // Required property: price of the product
-    description?: string;   // Optional property: description of the product
+    id: number;
+    name: string;
+    price: number;
+    description?: string; // Optional property
 }
 
-/**
- * Example of a product object implementing the Product interface.
- */
 const product: Product = {
     id: 1,
     name: "Laptop",
     price: 999.99,
-    description: "A high-end gaming laptop" // description is provided, but it's optional
+    description: "A high-end gaming laptop"
 };
 
-console.log(product); // Log the product to verify the implementation
+console.log(product);
+
 ```
 
-### 2
+*Solution for Object 2*
 
 ```tsx
+tsxCopy code
 /**
  * Interface representing an address.
- * All properties are required for an address.
  */
 interface Address {
-    street: string;         // Required property: street name
-    city: string;           // Required property: city name
-    state: string;          // Required property: state name
-    postalCode: string;     // Required property: postal code
+    street: string;
+    city: string;
+    state: string;
+    postalCode: string;
 }
 
 /**
@@ -146,22 +146,19 @@ interface Address {
  * Optional properties are marked with `?`.
  */
 interface User {
-    id: number;             // Required property: user ID
-    username: string;       // Required property: username
-    email: string;          // Required property: email address
-    phone?: string;         // Optional property: phone number
-    address?: Address;      // Optional property: address object
+    id: number;
+    username: string;
+    email: string;
+    phone?: string; // Optional property
+    address?: Address; // Optional property
 }
 
-/**
- * Example of a user object implementing the User interface.
- */
 const user: User = {
     id: 123,
     username: "techguru",
     email: "techguru@example.com",
-    phone: "123-456-7890",   // phone is provided, but it's optional
-    address: {               // address is provided, but it's optional
+    phone: "123-456-7890",
+    address: {
         street: "123 Tech Lane",
         city: "Techville",
         state: "TX",
@@ -169,30 +166,30 @@ const user: User = {
     }
 };
 
-console.log(user); // Log the user to verify the implementation
+console.log(user);
+
 ```
 
-### 3
+*Solution for Object 3*
 
 ```tsx
+tsxCopy code
 /**
  * Interface representing an order item.
- * All properties are required for an order item.
  */
 interface OrderItem {
-    productId: number;      // Required property: product ID
-    quantity: number;       // Required property: quantity of the product
+    productId: number;
+    quantity: number;
 }
 
 /**
  * Interface representing a shipping address.
- * All properties are required for a shipping address.
  */
 interface ShippingAddress {
-    street: string;         // Required property: street name
-    city: string;           // Required property: city name
-    state: string;          // Required property: state name
-    postalCode: string;     // Required property: postal code
+    street: string;
+    city: string;
+    state: string;
+    postalCode: string;
 }
 
 /**
@@ -200,41 +197,39 @@ interface ShippingAddress {
  * Optional properties are marked with `?`.
  */
 interface Order {
-    orderId: number;            // Required property: order ID
-    userId: number;             // Required property: user ID
-    items: OrderItem[];         // Required property: array of order items
-    total: number;              // Required property: total price of the order
-    shippingAddress?: ShippingAddress; // Optional property: shipping address object
-    status?: string;            // Optional property: status of the order
-    trackingNumber?: string;    // Optional property: tracking number
+    orderId: number;
+    userId: number;
+    items: OrderItem[];
+    total: number;
+    shippingAddress?: ShippingAddress; // Optional property
+    status?: string; // Optional property
+    trackingNumber?: string; // Optional property
 }
 
-/**
- * Example of an order object implementing the Order interface.
- */
 const order: Order = {
     orderId: 456,
     userId: 123,
     items: [
         {
             productId: 1,
-            quantity: 2          // quantity of product with ID 1
+            quantity: 2
         },
         {
             productId: 2,
-            quantity: 1          // quantity of product with ID 2
+            quantity: 1
         }
     ],
-    total: 1499.97,              // total price of the order
-    shippingAddress: {           // shipping address is provided, but it's optional
+    total: 1499.97,
+    shippingAddress: {
         street: "123 Tech Lane",
         city: "Techville",
         state: "TX",
         postalCode: "75001"
     },
-    status: "Shipped",           // status is provided, but it's optional
-    trackingNumber: "TRACK12345" // tracking number is provided, but it's optional
+    status: "Shipped",
+    trackingNumber: "TRACK12345"
 };
 
-console.log(order); // Log the order to verify the implementation
+console.log(order);
+
 ```

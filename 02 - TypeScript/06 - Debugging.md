@@ -1,6 +1,6 @@
-# Debugging Assignment (TypeScript)
+### Assignment: Debugging TypeScript Code
 
-Debug a series of TypeScript code snippets that cover key concepts including type annotations, type inference, function types, interfaces, and union types. Identify and fix errors in the provided code.
+In this assignment, you'll debug TypeScript code snippets covering type annotations, type inference, function types, interfaces, and union types. Your task is to identify and fix errors to ensure the code compiles and runs correctly.
 
 **Estimated Time to Completion:** 90 minutes
 
@@ -10,44 +10,41 @@ Debug a series of TypeScript code snippets that cover key concepts including typ
 
 1. Read through the directions below.
 2. Complete the necessary debugging tasks as outlined.
-3. Submit your corrected code for evaluation.
+3. Submit your GitHub URL with your corrected code for evaluation.
 
 **Evaluation Criteria & Learning Objectives:**
 
-- Identify and correct type-related errors in TypeScript code
-- Properly use type annotations and type inference
-- Correctly define and use functions with typed parameters and return values
-- Properly use interfaces to describe object shapes
-- Correctly implement union types
-
----
+- **Identify and correct type-related errors in TypeScript code:** Ensure that all type errors are addressed and the code compiles correctly.
+- **Properly use type annotations and type inference:** Apply correct type annotations and leverage TypeScript's type inference capabilities.
+- **Correctly define and use functions with typed parameters and return values:** Ensure that function parameters and return values are correctly typed and handled.
+- **Properly use interfaces to describe object shapes:** Define and implement interfaces accurately to describe object structures.
+- **Correctly implement union types:** Use union types appropriately to handle different types of data.
 
 **Directions**
 
-### 1. Debugging Variables and Type Annotations
+**1. Debugging Variables and Type Annotations**
 
-### Problem 1:
+*Problem 1:*
 
 The following code has type errors. Fix the errors to ensure the code compiles and runs correctly.
 
 ```tsx
-
 let username: string = 123;
 let isStudent: boolean = "true";
 let score: number = null;
 let data: any = undefined;
 
 console.log(username, isStudent, score, data);
+
 ```
 
-2. Debugging Functions and Parameters
+**2. Debugging Functions and Parameters**
 
-### Problem 2:
+*Problem 2:*
 
 The following code has errors related to function parameters and return types. Fix the errors.
 
 ```tsx
-
 function add(a: number, b: string): number {
     return a + b;
 }
@@ -58,11 +55,12 @@ function greet(name: string): number {
 
 console.log(add(5, "10"));
 console.log(greet("Alice"));
+
 ```
 
-3. Debugging Interfaces
+**3. Debugging Interfaces**
 
-### Problem 3:
+*Problem 3:*
 
 The following code has errors related to interface definitions. Fix the errors.
 
@@ -84,11 +82,12 @@ const jane: Person = {
 };
 
 console.log(john, jane);
+
 ```
 
-### 4. Debugging Union Types
+**4. Debugging Union Types**
 
-### Problem 4:
+*Problem 4:*
 
 The following code has errors related to union types. Fix the errors.
 
@@ -102,8 +101,6 @@ printId("ABC123");
 
 ```
 
----
-
 **Expected Output for All Problems:**
 
 - All code snippets should compile without errors.
@@ -113,13 +110,12 @@ printId("ABC123");
 
 - Pay close attention to type annotations and ensure they are used correctly.
 - Test each code snippet after debugging to verify correctness.
-- Submit your corrected code snippets for evaluation.
 
 ---
 
-# Solution:
+**Solutions**
 
-### 1
+**1. Debugging Variables and Type Annotations**
 
 ```tsx
 // Fixed type annotations and assigned correct values
@@ -129,9 +125,10 @@ let score: number = 0; // Changed from null to number (0 is a valid number)
 let data: any = undefined; // No change needed; 'any' type can hold undefined
 
 console.log(username, isStudent, score, data);
+
 ```
 
-### 2
+**2. Debugging Functions and Parameters**
 
 ```tsx
 // Fixed type annotations and corrected return types
@@ -145,9 +142,10 @@ function greet(name: string): string {
 
 console.log(add(5, 10)); // Both arguments are numbers
 console.log(greet("Alice")); // Correct return type string
+
 ```
 
-### 3
+**3. Debugging Interfaces**
 
 ```tsx
 interface Person {
@@ -168,9 +166,10 @@ const jane: Person = {
 };
 
 console.log(john, jane);
+
 ```
 
-### 4
+**4. Debugging Union Types**
 
 ```tsx
 function printId(id: number | string) {
@@ -183,4 +182,5 @@ function printId(id: number | string) {
 
 printId(123); // Should print the number
 printId("ABC123"); // Should print the string in uppercase
+
 ```

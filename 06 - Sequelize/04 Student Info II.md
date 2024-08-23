@@ -1,75 +1,71 @@
-Assignment: Creating and Deleting Student Records
-# Assignment: Student Info II
+### Assignment: Student Info II
 
 In this assignment, you will build a simple web application using Node.js, Express, and Sequelize to handle student records. The application will allow users to create new student records and delete existing ones via a web interface.
 
-![Student Info Wireframe](../10%20-%20Assets/StudentInfoII.png)
+![../10%20-%20Assets/StudentInfoII.png](../10%20-%20Assets/StudentInfoII.png)
 
 **Estimated Time to Completion:** 2-3 hours
 
 **Level of Complexity:** Medium
 
-## Instructions
+**Instructions**
 
 1. Read through the directions below. Note: You will be provided with any necessary files on which to work.
 2. Complete the necessary elements as outlined.
-3. Zip the project and submit to [XXXXX] by the due date.
+3. Submit your GitHub URL with the completed code by the due date.
 
-## Evaluation Criteria & Learning Objectives
+**Evaluation Criteria & Learning Objectives**
 
-- Implement basic CRUD operations (Create and Delete) using Sequelize ORM.
-- Develop a simple web interface using Express to interact with the database.
-- Validate functionality through form submissions and database changes.
+- **Implement basic CRUD operations (Create and Delete) using Sequelize ORM.**
+- **Develop a simple web interface using Express to interact with the database.**
+- **Validate functionality through form submissions and database changes.**
 
-## Directions
+**Directions**
 
-For this assignment, you will create a web application to manage student records. Follow the steps below to complete the assignment:
+**1. Project Setup**
 
-### Project Setup
+- Initialize a new Node.js project and install required dependencies (express, sequelize, and a suitable database adapter like mysql2).
 
-1. Initialize a new Node.js project and install required dependencies (express, sequelize, and a suitable database adapter like mysql2).
+**2. Database Configuration**
 
-### Database Configuration
-
-1. Configure Sequelize:
+- Configure Sequelize:
     - Set up Sequelize to connect to your database and test the connection to ensure it is working properly.
 
-### Model Definition
+**3. Model Definition**
 
-1. Define a Model:
-    - We will be using the data from our first assignment `Student Info I` with `students_db` schema.
+- Define a Model:
+    - We will be using the data from our first assignment `Student Info I` with the `students_db` schema.
 
-### Build API Endpoints
+**4. Build API Endpoints**
 
-1. Create API Endpoints:
-    - POST /students: Create a new student record based on the data submitted through a form.
-    - DELETE /students/:id: Delete a student record by ID.
+- Create API Endpoints:
+    - *POST /students:* Create a new student record based on the data submitted through a form.
+    - *DELETE /students/:id:* Delete a student record by ID.
 
-### Web Interface
+**5. Web Interface**
 
-1. Create Forms:
-    - Student Creation Form: Design a form to allow users to create a new student. The form should include fields for first_name, last_name, email, and age.
-    - Implement a button next to each student record in the table that allows users to delete the student. This button should submit a form to the /students/delete/:id endpoint.
+- Create Forms:
+    - *Student Creation Form:* Design a form to allow users to create a new student. The form should include fields for `first_name`, `last_name`, `email`, and `age`.
+    - Implement a button next to each student record in the table that allows users to delete the student. This button should submit a form to the `/students/delete/:id` endpoint.
 
-### Validation and Testing
+**6. Validation and Testing**
 
-1. Validate Functionality:
+- Validate Functionality:
     - Ensure that the forms correctly create and delete student records.
     - Test the application using a web browser to ensure the API endpoints and forms work as expected.
 
-## MVP Requirements
+**MVP Requirements**
 
-- Student Creation Form: Implement a form that allows users to create a new student record.
-- Student Deletion Form: Implement a form that allows users to delete a student record by ID.
-- API Endpoints: Implement the necessary endpoints to handle form submissions.
+- **Student Creation Form:** Implement a form that allows users to create a new student record.
+- **Student Deletion Form:** Implement a form that allows users to delete a student record by ID.
+- **API Endpoints:** Implement the necessary endpoints to handle form submissions.
 
-## Expected Outputs
+**Expected Outputs**
 
-- Web Interface: Functional forms for creating and deleting student records.
-- Database: Verify that new student records are created and existing records are deleted in the database.
+- **Web Interface:** Functional forms for creating and deleting student records.
+- **Database:** Verify that new student records are created and existing records are deleted in the database.
 
-## Additional Notes
+**Additional Notes**
 
 - Ensure that you handle errors gracefully, both on the server-side and client-side.
 - Include any relevant screenshots or exports showing the web application in action.
-
