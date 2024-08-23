@@ -1,10 +1,8 @@
-# Counter (Express session)
+### Assignment: Counter (Express session)
 
 Create a simple counter application using Express.js, TypeScript, and sessions. The application will have two buttons: one to increase the counter and one to decrease it. Each button will have its own URL route to handle the increase or decrease action. The main page will display the current counter value each time.
 
----
-
-![Counter](/10%20-%20Assets/Counter.png)
+![/10%20-%20Assets/Counter.png](/10%20-%20Assets/Counter.png)
 
 **Estimated Time to Completion:** 90 minutes
 
@@ -14,42 +12,32 @@ Create a simple counter application using Express.js, TypeScript, and sessions. 
 
 1. Read through the directions below.
 2. Complete the necessary elements as outlined.
-3. Submit your code for evaluation.
+3. Submit your GitHub URL with the completed code by the due date.
 
 **Evaluation Criteria & Learning Objectives:**
 
-- Set up an Express.js application with TypeScript
-- Configure basic routing in Express.js
-- Utilize sessions to persist data across requests
-- Use EJS templating to render dynamic HTML
-- Implement GET routes to handle counter actions
-
----
+- **Set up an Express.js application with TypeScript:** Learn to configure and structure a TypeScript-based Express project.
+- **Configure basic routing in Express.js:** Implement basic routing to handle different URL requests.
+- **Utilize sessions to persist data across requests:** Understand how to maintain state across different HTTP requests using sessions.
+- **Use EJS templating to render dynamic HTML:** Leverage EJS to dynamically generate HTML content based on server-side data.
+- **Implement GET routes to handle counter actions:** Create routes to increase, decrease, and display the counter value.
 
 **Directions**
 
-### 1. Set Up the Project
-
-**Note:** You have already learned how to set up an Express.js project with TypeScript, so the basic setup steps are omitted.
-
-### 2. Create the Express Application
-
-1. **Configure Session Middleware:**
-    - Configure the session middleware in your Express application to manage session data.
-2. **Create Routes:**
-    - Create three routes:
-        - A root route (`/`) to display the current counter value.
-        - An increase route (`/increase`) to increment the counter.
-        - A decrease route (`/decrease`) to decrement the counter.
-3. **Implement Session Logic:**
-    - Use sessions to store and update the counter value across requests.
-
-### 3. Create EJS Templates
-
-1. **Main Page Template (`index.ejs`):**
-    - Create an EJS template to display the current counter value and the two buttons for increasing and decreasing the counter.
-
----
+1. **Set-up the project**
+2. **Create the Express Application**
+    - **Configure Session Middleware:**
+        - Configure the session middleware in your Express application to manage session data.
+    - **Create Routes:**
+        - Create three routes:
+            - A root route (`/`) to display the current counter value.
+            - An increase route (`/increase`) to increment the counter.
+            - A decrease route (`/decrease`) to decrement the counter.
+    - **Implement Session Logic:**
+        - Use sessions to store and update the counter value across requests.
+3. **Create EJS Templates**
+    - **Main Page Template (`index.ejs`):**
+        - Create an EJS template to display the current counter value and the two buttons for increasing and decreasing the counter.
 
 **Expected Output:**
 
@@ -62,11 +50,10 @@ Create a simple counter application using Express.js, TypeScript, and sessions. 
 
 - Ensure your session configuration is secure and suitable for your development environment.
 - Test each route thoroughly to confirm that the counter updates correctly and persists across requests.
-- Submit your completed code for evaluation.
 
 ---
 
-# Solution
+**Solutions**
 
 **src/server.ts**
 
@@ -121,8 +108,9 @@ app.get('/decrease', (req: Request, res: Response) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server is running at http://localhost:${port}`);
+    console.log(`Server is running at <http://localhost>:${port}`);
 });
+
 ```
 
 **src/views/index.ejs**
@@ -149,4 +137,5 @@ app.listen(port, () => {
 </body>
 
 </html>
+
 ```
