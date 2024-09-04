@@ -2,8 +2,6 @@
 
 In this assignment, you'll analyze a provided Node.js code snippet that simulates a basic online bookstore. However, there are errors in the code causing unexpected behavior. Your task is to identify and correct these errors to ensure the bookstore functions correctly.
 
----
-
 **Estimated Time to Completion:** 60 mins
 
 **Level of Complexity:** Medium
